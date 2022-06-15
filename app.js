@@ -1,13 +1,13 @@
-const app  = require('express')()
-const mongoose = require('mongoose');
-const routeController = require('./routes.js')
+// import express from 'express';
+// import registerRoutes from './services/registerRoutes.js'
+// import errorHandler from './services/errorHandler.js';
 
-app.use(routeController)
 
-const URI = 'mongodb://127.0.0.1:27017/test?compressors=none'
-const db =  mongoose.connect(URI, {}, err => {
-    if (err) throw new Error(err)
-    app.listen(3333, ()=>{
-        console.log('listening...');
-    });
-});
+// const app  = express();
+// app.use(express.json());
+// app.use('/', await registerRoutes('../routes/home.js'));
+// app.use('*', (req, res) => res.json({warning: 'No such address exists'}))
+// app.use(errorHandler);
+
+// export { app }
+

@@ -1,0 +1,5 @@
+
+@param1 = popis
+
+GET http://localhost:3333/params/hey&there
+content-type: application/json
